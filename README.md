@@ -1,6 +1,6 @@
 # Changes
 
-This has been forked from https://github.com/confluentinc/demo-scene/blob/master/kafka-connect-zero-to-hero/docker-compose.yml
+This has been forked from https://github.com/jcustenborder/kafka-connect-twitter
 
 Changes include this file and config/ to match the changed docker-compose.yml, which is a simplified version of https://github.com/confluentinc/demo-scene/blob/master/kafka-connect-zero-to-hero/docker-compose.yml which is under the same license. 
 
