@@ -1,3 +1,9 @@
+# Changes
+
+This has been forked from https://github.com/confluentinc/demo-scene/blob/master/kafka-connect-zero-to-hero/docker-compose.yml
+
+Changes include this file and config/ to match the changed docker-compose.yml, which is a simplified versio from https://github.com/confluentinc/demo-scene/blob/master/kafka-connect-zero-to-hero/docker-compose.yml which is under the same license. 
+
 # Introduction
 
 This connector uses the twitter streaming api to listen for status update messages and 
@@ -283,6 +289,10 @@ This can be null if the instance is from User.getStatus().
 
 ```
 mvn clean package
-export CLASSPATH="$(find target/ -type f -name '*.jar'| grep '\-package' | tr '\n' ':')"
-$CONFLUENT_HOME/bin/connect-standalone connect/connect-avro-docker.properties config/TwitterSourceConnector.properties
+docker-compose up
+docker cp target/ kafka-connect:/home/appuser/
+docker cp TwitterSourceConnector.config kafka-connect:/home/appuser/
+docker cp config/ kafka-connect:/home/appuser/
+docker exec -it kafka-connect bash
+connect-standalone config/connect-avro-docker.properties TwitterSourceConnector.config
 ```
