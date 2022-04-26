@@ -2,7 +2,7 @@
 
 This has been forked from https://github.com/confluentinc/demo-scene/blob/master/kafka-connect-zero-to-hero/docker-compose.yml
 
-Changes include this file and config/ to match the changed docker-compose.yml, which is a simplified versio from https://github.com/confluentinc/demo-scene/blob/master/kafka-connect-zero-to-hero/docker-compose.yml which is under the same license. 
+Changes include this file and config/ to match the changed docker-compose.yml, which is a simplified version of https://github.com/confluentinc/demo-scene/blob/master/kafka-connect-zero-to-hero/docker-compose.yml which is under the same license. 
 
 # Introduction
 
